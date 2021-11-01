@@ -55,7 +55,7 @@ async function run() {
             const newPackage = req.body;
             packageCollection.insertOne(newPackage)
                 .then(result => {
-                    res.send(result.insertedId);
+                    res.send(result);
                 });
         });
 
